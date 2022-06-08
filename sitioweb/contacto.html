@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <!--inicio de nav-->
@@ -24,13 +25,13 @@
                     <a href="./productos.html">Productos</a>
                 </li>
                 <li class="navegacion__item">
-                    <a href="./carrito.html">Carrito</a>
+                    <a href="./contacto.html"><i class="material-icons">contacts</i></a>
                 </li>
                 <li class="navegacion__item">
-                    <a href="./contacto.html">Contacto</a>
+                    <a href="./carrito.html"><i class="material-icons">shopping_cart</i></a>
                 </li>
                 <li class="navegacion__item">
-                    <a href="./micuenta.html">Mi Cuenta</a>
+                    <a href="./micuenta.html"><i class="material-icons">account_circle</i></a>
                 </li>
             </ul>
         </nav>
@@ -44,29 +45,40 @@
             </p>
         </div>
     </section>
-    <section>
-        <div class="block__form">
-            <form action="" class="formulario">
-                <label for="Nombre">Nombre:</label>
-                <input type="text" name="Nombre" placeholder="Nombre">
-                <br>
-                <label for="Apellido">Apellido:</label>
-                <input type="text" name="Apellido" placeholder="Apellido">
-                <br>
-                <label for="Correo">Email:</label>
-                <input type="email" name="Correo" placeholder="Email">
-                <br>
-                <label for="Telefono">Numero de telefono:</label>
-                <input type="tel" name="Telefono" placeholder="Telefono">
-                <br>
-                <label for="Consulta"> Consulta:</label>
-                <textarea name="Consulta" id="" cols="30" rows="10"></textarea>
-                <br>
-                <input type="submit" value="Enviar Consulta">
-                <input type="reset" value="Borrar">
-            </form>
-        </div>
+    <section id="form" class="form">
+        <div class="block">
+            <h2 class="block__text">Dejanos tu mensaje:</h2>
+            <div class="block__form">
+                <form action="" class="formulario">
+                    <label for="Nombre">Nombre:</label>
+                    <span class="line"></span>
+                    <label for="Apellido">Apellido:</label>
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                    <br>
+                    <input type="text" name="Apellido" placeholder="Apellido">
+                    <span class="line"></span>
+                    <br>
+                    <span class="line"></span>
+                    <label for="Correo">Email:</label>
+                    <span class="line"></span>
+                    <label for="Telefono">Numero de telefono:</label>
+                    <input type="email" name="Correo" placeholder="Email">
+                    <br>
+                    <input type="tel" name="Telefono" placeholder="Telefono">
+                    <span class="line"></span>
+                    <br>
+                    <span class="line"></span>
+                    <label for="Consulta"> Consulta:</label>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <textarea name="Consulta" id="" cols="20" rows="5"></textarea>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <input type="submit" value="Enviar Consulta">
 
+                </form>
+            </div>
+        </div>
     </section>
     <!--cierre de formulario-->
     <!--footer-->

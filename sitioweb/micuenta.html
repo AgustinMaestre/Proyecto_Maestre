@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cuenta</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <!--inicio de nav-->
@@ -24,13 +25,13 @@
                     <a href="./productos.html">Productos</a>
                 </li>
                 <li class="navegacion__item">
-                    <a href="./carrito.html">Carrito</a>
+                    <a href="./contacto.html"><i class="material-icons">contacts</i></a>
                 </li>
                 <li class="navegacion__item">
-                    <a href="./contacto.html">Contacto</a>
+                    <a href="./carrito.html"><i class="material-icons">shopping_cart</i></a>
                 </li>
                 <li class="navegacion__item">
-                    <a href="./micuenta.html">Mi Cuenta</a>
+                    <a href="./micuenta.html"><i class="material-icons">account_circle</i></a>
                 </li>
             </ul>
         </nav>
@@ -44,20 +45,19 @@
             <p class="principal__color">Ingresá a tu cuenta para acceder a muchos beneficios que tenemos disponibles para vos.</p>
         </div>
     </section>
-    <br>
-    <br>
-    <section>
-        <form action="" class="formulario">
-            <label for="Nombre de usuario"> Nombre de usuario:</label>
-            <br>
-            <input type="email" name="Correo" placeholder="Email">
-            <br>
-            <label for="Contrasenia">Contraseña:</label>
-            <br>
-            <input type="password" name="Contraseña" id="" placeholder="Contraseña">
-            <br>
-            <input type="submit" value="Ingresar">
-        </form>
+    <section id="form" class="form">
+        <div class="block">
+            <form action="" class="formulario">
+                <label for="Nombre de usuario"> Nombre de usuario:</label>
+                <br>
+                <label for="Contrasenia">Contraseña:</label>
+                <input type="email" name="Correo" placeholder="Email">
+                <br>
+                <br>
+                <input type="password" name="Contraseña" id="" placeholder="Contraseña">
+                <input type="submit" value="Ingresar">
+            </form>
+        </div>
     </section>
     <!--footer-->
     <section>

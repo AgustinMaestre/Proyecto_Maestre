@@ -28,12 +28,11 @@ html{
 }
 img{
     width: 100%;
-    border-radius: 1rem;
 }
 body {
-background-color: #8377D1; 
-font-family: 'Roboto Slab', serif;
-font-weight: 300;
+    background-image: linear-gradient(45deg, #8377D1, #6e43e6);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
 }
 a{
     text-decoration: none;
@@ -47,7 +46,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #54c6ebff;
+    background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     margin: 0px 0px;
     padding: 0px 0px;
 }
@@ -78,6 +77,16 @@ header nav ul li{
     justify-content: space-between;
     margin: 1rem;
     font-size: var(--text-small);
+
+}
+header nav ul li a{
+    padding: 1rem 1.2rem;
+    transition: .7s;
+}
+header nav ul li a:hover{
+    color: white;
+    background-color: #8377D1;
+    border-radius: 0.5rem;
 }
 .principal{
     font-family:  'Merriweather', serif;
@@ -87,12 +96,15 @@ header nav ul li{
     background-image: url(../img/Img1.jpg);
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 .principal__text{
     color: var(--alternative);
     font-weight: 700;
     padding: 1rem;
+}
+.img__banner{
+    margin: 5rem 0;
 }
 .tarjetas{
     max-width: 1300px;
@@ -106,6 +118,7 @@ header nav ul li{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin: 4rem 2rem;
 }
 .box__img{
     display: flex;
@@ -114,8 +127,14 @@ header nav ul li{
     border-radius: 1rem;
     margin: 2rem;
 }
+.box__img img{
+    border-radius: 1rem;
+}
 .box__text{
     flex: 1 1 50%;
+}
+.box__textos:hover{
+    transform: scale(1.1, 1.1);
 }
 .box__textos{
     display: flex;
@@ -125,8 +144,9 @@ header nav ul li{
     font-size: var(--text-small);
     border-radius: 1rem;
     background-color: #00a878;
-    margin: 2rem;
+    margin: 4rem 2rem;
     padding: 1rem;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 box__title{
     font-family:'Merriweather', serif;
@@ -142,29 +162,56 @@ box__title{
     background-size: cover;
     border-radius: 1rem;
     background-attachment: fixed;
-    margin: 2rem;
+    margin: 6rem 2rem;
     padding: 2rem;
+}
+.products picture img{
+    border-radius: 1rem;
 }
 .products__img1{
     grid-column: 1 / 4;
+    transition: 1.5s;
+}
+.products__img1:hover{
+    transform: scale(1.1);
 }
 .products__img2{
     grid-column: 3 / 5;
     grid-row: 2 / 3;
+    transition: 1.5s;
+}
+.products__img2:hover{
+    transform: scale(1.1);
 }
 .products__img3{
     grid-column: 6 / 8;
     grid-row: 2 / 3;
+    transition: 1.5s;
+}
+.products__img3:hover{
+    transform: scale(1.1);
 }
 .products__img4{
     grid-column: 9 / 11;
     grid-row: 2 / 3;
+    transition: 1.5s;
+}
+.products__img4:hover{
+    transform: scale(1.1);
 }
 .products__img5{
     grid-column: 5 / 9;
+    transition: 1.5s;
+}
+.products__img5:hover{
+    transform: scale(1.1);
 }
 .products__img6{
     grid-column: 10 / 13;
+    transition: 1.5s;
+}
+.products__img6:hover{
+    transform: scale(1.1);
 }
 .form{
     display: flex;
@@ -204,15 +251,22 @@ box__title{
 footer{
     display: flex;
     align-content: center;
-    background-color: #54c6ebff;
+    background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     padding: 40px 0;
     font-size: var(--text-small);
+}
+.copyright{
+    margin-top: 1rem;
+}
+.wsp__logo:hover{
+    transform: scale(1.1, 1.1);
 }
 .wsp__logo{
     position: fixed;
     bottom: 0;
     right: 0;
     width: 50px;
+    transition: 1.5s;
 }
 .copyright__linea{
     display: inline-block;
@@ -222,6 +276,9 @@ footer{
 @media screen and (max-width: 700px) {
     header {
         flex-direction: column;
+    }
+    .box__textos:hover{
+        transform: scale(1.05, 1.05);
     }
     .box{
         flex-direction: column;

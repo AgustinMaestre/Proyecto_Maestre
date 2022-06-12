@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market Online</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <body>
     <!--inicio de nav-->
@@ -43,6 +44,11 @@
             <p class="principal__text">Bienvenidos a tu tienda virtual de frutas y verduras. La mejor calidad y con la comodidad de tener todo a un simple click.</p>
         </div>
     </section>
+    <section id="img__banner"  class="img__banner">
+        <picture>
+            <img src="./img/img_banner.jpg" alt="">
+        </picture>
+    </section>
     <!--tarjetas-->
     <main class="tarjetas">
         <section id="box" class="box">
@@ -60,12 +66,12 @@
                         <p>Somos proveederos para quienes quieran adquirir nuestros productos y puedan tener su propio negocio.</p>
                     </article>
                 </div>
-                <picture class="box__img">
+                <picture class="box__img" data-aos="zoom-in-left">
                     <img src="./img/img3.jpg" alt="estante con cajones de frutas y verduras">
                 </picture>
         </section>
         <section id="box" class="box">
-            <picture class="box__img">
+            <picture class="box__img" data-aos="zoom-in-right">
                 <img src="./img/procesamiento.jpg" alt="imagen de un centro de procesamiento de frutas y verduras">
             </picture>
             <div class="box__text">
@@ -98,7 +104,7 @@
     </main>
     <!--inicio de footer-->
     <section>
-        <div class="Copyright">
+        <div  class="copyright">
             <footer>
                 <p class="copyright__linea">Copyright © 2022. Site web designed By: Agustin Maestre. All rights reserved.</p>
                 <a class="wsp" href="./sitioweb/contacto.html">
@@ -108,5 +114,9 @@
         </div>
     </section>
     <!--cierrer de footer-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

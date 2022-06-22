@@ -18,6 +18,9 @@
     /*spacings*/
 
 }
+
+/* normalize */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -29,6 +32,9 @@ html{
 img{
     width: 100%;
 }
+
+/* commons elements */
+
 body {
     background-image: linear-gradient(45deg, #8377D1, #6e43e6);
     font-family: 'Roboto Slab', serif;
@@ -109,12 +115,12 @@ h1.principal__text{
 .img__banner{
     margin: 5rem 0;
 }
+
+/* box index */
+
 .tarjetas{
     max-width: 1300px;
     margin: 0px auto;
-}
-.item{
-    color: #2b2b2b;
 }
 .box{
     display: flex;
@@ -132,12 +138,14 @@ h1.principal__text{
 }
 .box__img img{
     border-radius: 1rem;
+    box-shadow: 1rem 2rem 1.5rem 1rem rgba(0, 0, 0, 0.2), 1rem 4rem 2.5rem 1rem rgba(0, 0, 0, 0.19);
 }
 .box__text{
     flex: 1 1 50%;
 }
 .box__textos:hover{
     transform: scale(1.1, 1.1);
+    box-shadow: 1rem 2rem 1.5rem 1rem rgba(0, 0, 0, 0.2), 1rem 4rem 2.5rem 1rem rgba(0, 0, 0, 0.19);
 }
 .box__textos{
     display: flex;
@@ -158,6 +166,9 @@ h1.principal__text{
     font-weight: bold;
     font-size: 1.5em;
 }
+
+/* products index */
+
 .products{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -220,6 +231,9 @@ h1.principal__text{
 .products__img6:hover{
     transform: scale(1.1);
 }
+
+/* form contactos micuenta */
+
 .form{
     display: flex;
     flex-direction: column;
@@ -233,6 +247,7 @@ h1.principal__text{
     background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     border-radius: 0.7rem;
     padding: 12rem 8rem;
+    box-shadow: 1.5rem 3rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2), 1.5rem 6rem 3.5rem 1.5rem rgba(0, 0, 0, 0.19);
 }
 .form-label{
     font-size: 1.7rem;
@@ -247,13 +262,24 @@ h1.principal__text{
     background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     border-radius: 0.7rem;
     padding: 12rem 8rem;
+    box-shadow: 1.5rem 3rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2), 1.5rem 6rem 3.5rem 1.5rem rgba(0, 0, 0, 0.19);
 }
+/* cards productos */
 .row{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 .card{
     background-color: #00a878;
+}
+.card-img-top{
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-img-top:hover{
+    transform: scale(1.1, 1.1);
+    z-index: 1;
+    border-radius: 1rem;
+    box-shadow: 1rem 1.5rem 1rem 1rem rgba(0, 0, 0, 0.2), 1rem 3rem 1.5rem 1rem rgba(0, 0, 0, 0.19);
 }
 .card-body{
     font-family: 'Roboto Slab', serif;
@@ -263,6 +289,9 @@ h1.principal__text{
 .card-title{
     font-size: 2rem;
 }
+
+/* footer */
+
 footer{
     display: flex;
     align-content: center;
@@ -290,6 +319,9 @@ footer{
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
 }
+
+/* medias query */
+
 @media screen and (max-width: 700px) {
     header {
         flex-direction: column;

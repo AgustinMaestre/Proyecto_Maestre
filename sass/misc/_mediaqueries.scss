@@ -1,0 +1,21 @@
+
+/* Medias Query */
+
+@media screen and (max-width: 780px) {
+    header {
+        flex-direction: column;
+    }
+    .box__textos:hover{
+        transform: scale(1.05, 1.05);
+    }
+    .box{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navegacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+}

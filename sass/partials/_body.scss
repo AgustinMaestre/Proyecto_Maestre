@@ -1,0 +1,36 @@
+
+/* Body */
+
+body {
+    background-image: linear-gradient(45deg, #8377D1, #6e43e6);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+
+    p{
+        margin-bottom: 0;
+    }
+    .principal{
+        font-family:  'Merriweather', serif;
+        font-weight: 300;
+        font-size: 3rem;
+        color: $secondary;
+        background-image: url(../img/Img1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 5rem;
+
+        .principal__text{
+            color: $secondary;
+            font-weight: 700;
+            padding: 1rem;
+        }
+        h1.principal__text{
+            font-size: 4rem;
+        }
+    }
+    .img__banner{
+        margin: 5rem 0;
+    }
+}
+
+

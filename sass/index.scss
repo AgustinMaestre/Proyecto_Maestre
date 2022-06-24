@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@300;500&display=swap');
+
+/* Misc */
+
+@import './misc/mixins';
+@import './misc/normalize';
+@import './misc/variables';
+
+/* Partials */
+
+@import './partials/body';
+@import './partials/footer';
+@import './partials/header';
+
+/* Views */
+
+@import './views/carrito';
+@import './views/contacto';
+@import './views/home';
+@import './views/micuenta';
+@import './views/productos';
+
+@import './misc/mediaqueries';

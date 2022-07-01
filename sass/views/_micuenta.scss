@@ -4,16 +4,16 @@
     align-items: center;
     max-width: 100vw;
     margin: 20rem auto;
+    
     .form__block{
         width: 80vw;
-        height: 40rem;
         background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
         border-radius: 0.7rem;
-        padding: 12rem 8rem;
+        padding: 10vw;
         box-shadow: 1.5rem 3rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2), 1.5rem 6rem 3.5rem 1.5rem rgba(0, 0, 0, 0.19);
     }
     .form-label{
-        font-size: 1.7rem;
+        font-size: $text-small;
         font-weight: bold;
     }
     .btn{

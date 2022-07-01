@@ -1,13 +1,12 @@
 
 /* Productos */
 
-.row{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+.row-cols-1{
+    margin: 20rem auto;
 
     .card{
-        background-color: #00a878;
-
+        background-color: $alternative;
+        
         .card-img-top{
             transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -19,12 +18,42 @@
             }
         }
         .card-body{
-            font-family: 'Roboto Slab', serif;
+            font-family: $text-box;
             font-weight: 300;
-            font-size: 1.7rem;
+            font-size: $text-small;
 
             .card-title{
-                font-size: 2rem;
+                font-size: $text-large;
+            }
+
+            .btn{
+                border: none;
+                border-radius: .5rem;
+                padding: .5rem 2rem;
+                width: 15rem;
+                font-weight: bold;
+            }
+            .btn__comprar{
+                @extend .btn;
+                background-color: $secondary;
+                
+                &:hover{
+                    background-color: #54c5eb9a;
+                }
+            }
+            .btn__precio{
+                @extend .btn;
+                background-color: $base;
+
+                &:hover{
+                    background-color: #8377d18f;
+                }
+            }
+
+            .btn__comprar a{
+                color: $text-color;
+                text-decoration: none;
+                border: none;
             }
         }
     }

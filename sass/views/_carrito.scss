@@ -1,0 +1,60 @@
+
+/* Carrito */
+
+.compras{
+    width: 80vw;
+    height: 65vh;
+    margin: 20rem auto;
+
+    .carrito{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        border: .5rem;
+        background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
+        border-radius: 1rem;
+        box-shadow: 1rem 1.5rem 1rem 1rem rgba(0, 0, 0, 0.2), 1rem 3rem 1.5rem 1rem rgba(0, 0, 0, 0.19);
+        text-align: center;
+
+        .row{
+            align-items: center;
+        }
+
+        .carrito__img img{
+            max-width: 16rem;
+        }
+        .col p{
+            font-size: $text-small;
+            font-weight: 400;
+        }
+        .col label{
+            font-size: $text-small;
+            font-weight: 400;
+        }
+        .col .btn{
+            padding: 0 3rem;
+            font-size: $text-small;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media screen and(max-width: 700px) {
+
+    .compras{
+        .carrito{
+            flex-direction: column;
+    
+            & .row{
+                flex-direction: column;
+            }
+            .carrito__img img{
+                max-width: 10rem;
+            }
+        }
+    }
+
+}

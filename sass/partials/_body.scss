@@ -3,33 +3,38 @@
 
 body {
     background-image: linear-gradient(45deg, #8377D1, #6e43e6);
-    font-family: 'Roboto Slab', serif;
+    font-family: $text-box;
     font-weight: 300;
 
     p{
         margin-bottom: 0;
     }
+    $banner:(
+        tPadding: 1rem,
+        fSize: 3rem,
+        tColor: #54c6ebff,
+        fWeiht: 700,
+    );
+
     .principal{
-        font-family:  'Merriweather', serif;
-        font-weight: 300;
-        font-size: 3rem;
-        color: $secondary;
-        background-image: url(../img/Img1.jpg);
+        font-family: $text-title;
+        font-weight: map-get($banner, fWeiht );
+        font-size: map-get($banner, fSize );
+        color: map-get($banner, tColor);
+        background-image: url(../img/Img2.jpg);
         background-size: cover;
         background-attachment: fixed;
         margin-top: 5rem;
 
         .principal__text{
-            color: $secondary;
-            font-weight: 700;
-            padding: 1rem;
+            padding: map-get($banner, tPadding);
         }
         h1.principal__text{
             font-size: 4rem;
         }
     }
     .img__banner{
-        margin: 5rem 0;
+        margin: 20rem 0;
     }
 }
 

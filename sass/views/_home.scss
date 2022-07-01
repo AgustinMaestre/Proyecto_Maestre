@@ -13,16 +13,16 @@
 
         .box__textos{
             display: flex;
-            color: #2b2b2b;
-            gap: 1rem;
+            color: $text-color;
+            gap: $spacing-xsmall;
             flex-direction: column;
             font-size: $text-small;
             border-radius: 1rem;
-            background-color: #00a878;
+            background-color: $alternative;
             margin: 4rem 2rem;
-            padding: 1rem;
+            padding: $spacing-xsmall;
             transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-family: 'Roboto Slab', serif;
+            font-family: $text-box;
             font-weight: 300;
             &:hover{
                 transform: scale(1.1, 1.1);
@@ -30,7 +30,7 @@
             }
             .box__title{
                 font-weight: bold;
-                font-size: 1.5em;
+                font-size: $text-large;
             }
         }
     }
@@ -39,7 +39,7 @@
         flex: 1 1 50%;
         text-align: center;
         border-radius: 1rem;
-        margin: 2rem;
+        margin: $spacing-small;
 
         img{
             border-radius: 1rem;
@@ -52,15 +52,15 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
+    grid-column-gap: $spacing-xsmall;
+    grid-row-gap: $spacing-xsmall;
     align-items: center;
-    background-image: url(../img/Img1.jpg);
+    background-image: url(../img/Img2.jpg);
     background-size: cover;
     border-radius: 1rem;
     background-attachment: fixed;
     margin: 6rem 2rem;
-    padding: 2rem;
+    padding: $spacing-small;
     
     picture img{
         border-radius: 1rem;
@@ -118,29 +118,3 @@
     }
 }
 
-.products{
-    grid-template-rows: repeat(3, auto);
-
-    .products__img1{
-        grid-column: 2 / 7;
-    }
-    .products__img2{
-        grid-column: 8 / 12;
-        grid-row: 2 / 3;
-    }
-    .products__img3{
-        grid-column: 2 / 6;
-        grid-row: 3 / 4;
-    }
-    .products__img4{
-        grid-column: 8 / 12;
-        grid-row: 3 / 4;
-    }
-    .products__img5{
-        grid-column: 2 / 7;
-        grid-row: 2 / 3;
-    }
-    .products__img6{
-        grid-column: 7 / 12;
-    }
-}

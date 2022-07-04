@@ -16,29 +16,41 @@
     <!--inicio de nav-->
     <header>
         <div class="header__nav container-xxl">
-            <picture class="logo">
-                <a href="./index.html">
-                    <img src="./img/logo1.png" alt="logo market online">
-                </a>
-            </picture>
-            <nav class="menu">
-                <ul class="navegacion">
-                    <li class="navegacion__item">
-                        <a href="./index.html">Inicio</a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="./sitioweb/productos.html">Productos</a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="./sitioweb/contacto.html"><i class="material-icons">contacts</i></a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="./sitioweb/carrito.html"><i class="material-icons">shopping_cart</i></a>
-                    </li>
-                    <li class="navegacion__item">
-                        <a href="./sitioweb/micuenta.html"><i class="material-icons">account_circle</i></a>
-                    </li>
-                </ul>
+            <nav class="menu navbar bg-light fixed-top">
+                <div class="container-fluid">
+                    <picture class="logo">
+                        <a href="./index.html">
+                            <img src="./img/logo1.png" alt="logo market online">
+                        </a>
+                    </picture>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Market Online</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navegacion">
+                            <li class="navegacion__item">
+                                <a href="./index.html"><i class="material-icons">home</i> Inicio</a>
+                            </li>
+                            <li class="navegacion__item">
+                                <a href="./sitioweb/productos.html"><i class="material-icons">store</i> Productos</a>
+                            </li>
+                            <li class="navegacion__item">
+                                <a href="./sitioweb/contacto.html"><i class="material-icons">contacts</i> Contacto</a>
+                            </li>
+                            <li class="navegacion__item">
+                                <a href="./sitioweb/carrito.html"><i class="material-icons">shopping_cart</i> Carrito</a>
+                            </li>
+                            <li class="navegacion__item">
+                                <a href="./sitioweb/micuenta.html"><i class="material-icons">account_circle</i> Mi Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>

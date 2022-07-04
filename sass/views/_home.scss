@@ -2,20 +2,16 @@
 /* Home */
 
 .box{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(row, center, space-around);
     margin: 4rem 2rem;
     
     .box__text{
         flex: 1 1 50%;
 
         .box__textos{
-            display: flex;
+            @include flex(column, none, none,);
             color: $text-color;
             gap: $spacing-xsmall;
-            flex-direction: column;
             font-size: $text-small;
             border-radius: 1rem;
             background-color: $alternative;

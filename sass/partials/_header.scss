@@ -2,64 +2,54 @@
 /* Header */
 
 header{
-    background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     margin: 0px 0px;
     padding: 0px 0px;
 
     .header__nav{
         @include flex(row, center, space-between);
-    }
 
-    picture a img{
-        @include flex(row, none, none);
-        border-radius: 1rem;
-        width: 20rem;
-        margin: $spacing-small;
-    }
+        nav{
+            @include flex(row, none, flex-end);
+            flex-basis: 60%;
+            background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
+            padding: $spacing-small;
 
-    nav{
-        @include flex(row, none, flex-end);
-        flex-basis: 60%;
-        padding: $spacing-small;
+            .offcanvas{
+                background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
 
-        .navegacion{
-            @include flex(row, none, space-around);
-            list-style-type: none;
-            gap: $spacing-small;
-        }
-
-        ul li{
-            @include flex(row, none, space-between);
-            margin: $spacing-xsmall;
-            font-size: $text-small;
+                .navegacion{
+                    @include flex(column, none, space-around);
+                    list-style-type: none;
+                }
         
-            a{
-                padding: 1rem 1.2rem;
-                transition: .7s;
-                text-decoration: none;
-                font-family: $text-nav; 
-                font-weight:500 ;
-                color: $text-color;
-
-                &:hover{
-                    color: $primary;
-                    background-color: $base;
-                    border-radius: 0.5rem;
+                ul li{
+                    @include flex(row, none, space-between);
+                    margin: $spacing-xsmall;
+                    font-size: $text-small;
+                
+                    a{
+                        padding: 1rem 1.2rem;
+                        transition: .7s;
+                        text-decoration: none;
+                        font-family: $text-nav; 
+                        font-weight:500 ;
+                        color: $text-color;
+        
+                        &:hover{
+                            color: $primary;
+                            background-color: $base;
+                            border-radius: 0.5rem;
+                        }
+                    }
                 }
             }
         }
     }
-}
 
-@media screen and (max-width: 560px) {
-    header{
-        nav{
-            .navegacion{
-                flex-direction: column;
-                align-items: center;
-                gap: 0px;
-            }
-        }
+    picture a img{
+        @include flex(row, none, none);
+        width: 20rem;
+        margin: 1rem 0;
     }
 
 }

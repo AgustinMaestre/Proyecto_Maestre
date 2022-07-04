@@ -5,8 +5,7 @@
     margin-top: $spacing-xsmall;
 
     footer{
-        display: flex;
-        align-content: center;
+        @include flex(none, center, none);
         background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
         padding: 40px 0;
         font-size: $text-small;

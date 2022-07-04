@@ -34,7 +34,7 @@ body {
     background-image: url(../img/Img2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 5rem; }
+    margin-top: 20rem; }
     body .principal .principal__text {
       padding: 1rem; }
     body .principal h1.principal__text {
@@ -47,7 +47,9 @@ body {
   margin-top: 1rem; }
   .copyright footer {
     display: flex;
-    align-content: center;
+    flex-direction: none;
+    align-items: center;
+    justify-content: none;
     background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     padding: 40px 0;
     font-size: 1.7rem; }
@@ -68,7 +70,6 @@ body {
 
 /* Header */
 header {
-  background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
   margin: 0px 0px;
   padding: 0px 0px; }
   header .header__nav {
@@ -76,52 +77,47 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; }
+    header .header__nav nav {
+      display: flex;
+      flex-direction: row;
+      align-items: none;
+      justify-content: flex-end;
+      flex-basis: 60%;
+      background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
+      padding: 2rem; }
+      header .header__nav nav .offcanvas {
+        background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%); }
+        header .header__nav nav .offcanvas .navegacion {
+          display: flex;
+          flex-direction: column;
+          align-items: none;
+          justify-content: space-around;
+          list-style-type: none; }
+        header .header__nav nav .offcanvas ul li {
+          display: flex;
+          flex-direction: row;
+          align-items: none;
+          justify-content: space-between;
+          margin: 1rem;
+          font-size: 1.7rem; }
+          header .header__nav nav .offcanvas ul li a {
+            padding: 1rem 1.2rem;
+            transition: .7s;
+            text-decoration: none;
+            font-family: "Roboto Slab";
+            font-weight: 500;
+            color: #2b2b2b; }
+            header .header__nav nav .offcanvas ul li a:hover {
+              color: #ffffff;
+              background-color: #8377D1;
+              border-radius: 0.5rem; }
   header picture a img {
     display: flex;
     flex-direction: row;
     align-items: none;
     justify-content: none;
-    border-radius: 1rem;
     width: 20rem;
-    margin: 2rem; }
-  header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: none;
-    justify-content: flex-end;
-    flex-basis: 60%;
-    padding: 2rem; }
-    header nav .navegacion {
-      display: flex;
-      flex-direction: row;
-      align-items: none;
-      justify-content: space-around;
-      list-style-type: none;
-      gap: 2rem; }
-    header nav ul li {
-      display: flex;
-      flex-direction: row;
-      align-items: none;
-      justify-content: space-between;
-      margin: 1rem;
-      font-size: 1.7rem; }
-      header nav ul li a {
-        padding: 1rem 1.2rem;
-        transition: .7s;
-        text-decoration: none;
-        font-family: "Roboto Slab";
-        font-weight: 500;
-        color: #2b2b2b; }
-        header nav ul li a:hover {
-          color: #ffffff;
-          background-color: #8377D1;
-          border-radius: 0.5rem; }
-
-@media screen and (max-width: 560px) {
-  header nav .navegacion {
-    flex-direction: column;
-    align-items: center;
-    gap: 0px; } }
+    margin: 1rem 0; }
 
 /* Views */
 /* Carrito */
@@ -132,6 +128,7 @@ header {
   .compras .carrito {
     display: flex;
     flex-direction: column;
+    align-items: none;
     justify-content: space-around;
     width: 100%;
     height: 100%;
@@ -167,6 +164,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: none;
   max-width: 100vw;
   margin: 20rem auto; }
   .form .form__cont {
@@ -192,9 +190,11 @@ header {
     flex: 1 1 50%; }
     .box .box__text .box__textos {
       display: flex;
+      flex-direction: column;
+      align-items: none;
+      justify-content: none;
       color: #2b2b2b;
       gap: 1rem;
-      flex-direction: column;
       font-size: 1.7rem;
       border-radius: 1rem;
       background-color: #00a878;
@@ -268,10 +268,12 @@ header {
     .products .products__img6:hover {
       transform: scale(1.1); }
 
+/* Mi Cuenta */
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: none;
   max-width: 100vw;
   margin: 20rem auto; }
   .form .form__block {

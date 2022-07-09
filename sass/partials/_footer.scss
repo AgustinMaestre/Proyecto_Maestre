@@ -5,17 +5,22 @@
     margin-top: $spacing-xsmall;
 
     footer{
-        @include flex(none, center, none);
+        @include flex(column, center, none);
         background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
         padding: 40px 0;
         font-size: $text-small;
 
         .copyright__linea{
             display: inline-block;
+            padding: $spacing-small;
             margin: 0px auto;
             color: $text-color;
             font-family: $text-box;
             font-weight: 300;
+        }
+        .icon{
+            @include flex(row, none, center);
+            max-width: 2.4rem;
         }
         .wsp__logo{
             position: fixed;

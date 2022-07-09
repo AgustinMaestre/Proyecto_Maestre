@@ -7,11 +7,15 @@
     margin: 20rem auto;
     
     .form__block{
-        width: 80vw;
+        @include flex(column, center, none);
         background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
         border-radius: 0.7rem;
-        padding: 10vw;
+        padding: 5vw;
         box-shadow: 1.5rem 3rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2), 1.5rem 6rem 3.5rem 1.5rem rgba(0, 0, 0, 0.19);
+
+        .mb-3{
+            width: 30vh;
+        }
     }
     .form-label{
         font-size: $text-small;
@@ -19,5 +23,15 @@
     }
     .btn{
         width: 10rem;
+    }
+}
+
+@media screen and(max-width: 500px){
+    .form .form__block{
+        width: 70vw;
+
+        .mb-3{
+            width: 15rem;
+            }
     }
 }

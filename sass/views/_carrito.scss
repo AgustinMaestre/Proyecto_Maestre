@@ -2,8 +2,7 @@
 /* Carrito */
 
 .compras{
-    width: 80vw;
-    height: 65vh;
+    width: 90vw;
     margin: 20rem auto;
 
     .carrito{
@@ -15,26 +14,42 @@
         border-radius: 1rem;
         box-shadow: 1rem 1.5rem 1rem 1rem rgba(0, 0, 0, 0.2), 1rem 3rem 1.5rem 1rem rgba(0, 0, 0, 0.19);
         text-align: center;
+        padding: $spacing-small;
 
         .row{
             align-items: center;
+            padding: 4rem  0;
         }
-
+        .row__tot{
+            font-size: 2.5rem;
+        }
+        .tot{
+            @include flex(none, none, space-evenly);
+        }
         .carrito__img img{
             max-width: 16rem;
         }
-        .col p{
-            font-size: $text-small;
-            font-weight: 400;
-        }
-        .col label{
-            font-size: $text-small;
-            font-weight: 400;
+        .col {
+            p{
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+            label{
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+            input{
+                font-size: 1.7rem;
+            }
         }
         .col .btn{
-            padding: 0 3rem;
-            font-size: $text-small;
-            font-weight: 400;
+            border: none;
+            font-size: 2.5rem;
+            border-radius: .5rem;
+            padding: .5rem 2rem;
+            width: 15rem;
+            font-weight: bold;
+            background-color: $base;
         }
     }
 }

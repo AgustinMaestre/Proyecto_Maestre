@@ -28,6 +28,9 @@ header{
                     font-size: $text-small;
                 
                     a{
+                        display: flex;
+                        align-items: center;
+                        gap: $spacing-xsmall;
                         padding: 1rem 1.2rem;
                         transition: .7s;
                         text-decoration: none;

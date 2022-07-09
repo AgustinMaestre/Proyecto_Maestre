@@ -47,7 +47,7 @@ body {
   margin-top: 1rem; }
   .copyright footer {
     display: flex;
-    flex-direction: none;
+    flex-direction: column;
     align-items: center;
     justify-content: none;
     background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
@@ -55,10 +55,17 @@ body {
     font-size: 1.7rem; }
     .copyright footer .copyright__linea {
       display: inline-block;
+      padding: 2rem;
       margin: 0px auto;
       color: #2b2b2b;
       font-family: "Roboto Slab", serif;
       font-weight: 300; }
+    .copyright footer .icon {
+      display: flex;
+      flex-direction: row;
+      align-items: none;
+      justify-content: center;
+      max-width: 2.4rem; }
     .copyright footer .wsp__logo {
       position: fixed;
       bottom: 0;
@@ -101,6 +108,9 @@ header {
           margin: 1rem;
           font-size: 1.7rem; }
           header .header__nav nav .offcanvas ul li a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             padding: 1rem 1.2rem;
             transition: .7s;
             text-decoration: none;
@@ -122,8 +132,7 @@ header {
 /* Views */
 /* Carrito */
 .compras {
-  width: 80vw;
-  height: 65vh;
+  width: 90vw;
   margin: 20rem auto; }
   .compras .carrito {
     display: flex;
@@ -136,21 +145,36 @@ header {
     background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     border-radius: 1rem;
     box-shadow: 1rem 1.5rem 1rem 1rem rgba(0, 0, 0, 0.2), 1rem 3rem 1.5rem 1rem rgba(0, 0, 0, 0.19);
-    text-align: center; }
+    text-align: center;
+    padding: 2rem; }
     .compras .carrito .row {
-      align-items: center; }
+      align-items: center;
+      padding: 4rem  0; }
+    .compras .carrito .row__tot {
+      font-size: 2.5rem; }
+    .compras .carrito .tot {
+      display: flex;
+      flex-direction: none;
+      align-items: none;
+      justify-content: space-evenly; }
     .compras .carrito .carrito__img img {
       max-width: 16rem; }
     .compras .carrito .col p {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
       font-weight: 400; }
     .compras .carrito .col label {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
       font-weight: 400; }
+    .compras .carrito .col input {
+      font-size: 1.7rem; }
     .compras .carrito .col .btn, .compras .carrito .col .row-cols-1 .card .card-body .btn__comprar, .row-cols-1 .card .card-body .compras .carrito .col .btn__comprar, .compras .carrito .col .row-cols-1 .card .card-body .btn__precio, .row-cols-1 .card .card-body .compras .carrito .col .btn__precio {
-      padding: 0 3rem;
-      font-size: 1.7rem;
-      font-weight: 400; }
+      border: none;
+      font-size: 2.5rem;
+      border-radius: .5rem;
+      padding: .5rem 2rem;
+      width: 15rem;
+      font-weight: bold;
+      background-color: #8377D1; }
 
 @media screen and (max-width: 700px) {
   .compras .carrito {
@@ -168,10 +192,10 @@ header {
   max-width: 100vw;
   margin: 20rem auto; }
   .form .form__cont {
-    width: 80vw;
+    width: 70vw;
     background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     border-radius: 0.7rem;
-    padding: 10vw;
+    padding: 5vw;
     box-shadow: 1.5rem 3rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2), 1.5rem 6rem 3.5rem 1.5rem rgba(0, 0, 0, 0.19); }
   .form .form-label {
     font-size: 1.7rem;
@@ -277,22 +301,35 @@ header {
   max-width: 100vw;
   margin: 20rem auto; }
   .form .form__block {
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
     background-image: linear-gradient(to right, #4facfe 40%, #00f2fe 60%);
     border-radius: 0.7rem;
-    padding: 10vw;
+    padding: 5vw;
     box-shadow: 1.5rem 3rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2), 1.5rem 6rem 3.5rem 1.5rem rgba(0, 0, 0, 0.19); }
+    .form .form__block .mb-3 {
+      width: 30vh; }
   .form .form-label {
     font-size: 1.7rem;
     font-weight: bold; }
   .form .btn, .form .row-cols-1 .card .card-body .btn__comprar, .row-cols-1 .card .card-body .form .btn__comprar, .form .row-cols-1 .card .card-body .btn__precio, .row-cols-1 .card .card-body .form .btn__precio {
     width: 10rem; }
 
+@media screen and (max-width: 500px) {
+  .form .form__block {
+    width: 70vw; }
+    .form .form__block .mb-3 {
+      width: 15rem; } }
+
 /* Productos */
 .row-cols-1 {
   margin: 20rem auto; }
   .row-cols-1 .card {
     background-color: #00a878; }
+    .row-cols-1 .card .zanahoria {
+      height: inherit; }
     .row-cols-1 .card .card-img-top {
       transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
       .row-cols-1 .card .card-img-top:hover {
